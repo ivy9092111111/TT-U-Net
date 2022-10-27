@@ -9,9 +9,9 @@ This repository is the official implementation of TT-U-Net: Temporal Transformer
 * We propose a novel temporal transformer U-Net (TT U-Net) for motion artifact reduction. We handle this challenging problem as a video deblurring task and modify the vanilla U-Net by introducing self-attention mechanism along temporal dimension.
 
 ## Demo
-
-
-
+|Case|Case1|Case2|Case3|
+|Uncorrected|<img width="300" src="gif/7_92_1.gif">|||
+|TT U-Net Corrected||||
 
 
 
