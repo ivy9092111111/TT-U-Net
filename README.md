@@ -10,8 +10,10 @@ This repository is the official implementation of TT-U-Net: Temporal Transformer
 
 ## Demo
 |Case|Case1|Case2|Case3|
-|Uncorrected|<img width="300" src="gif/7_92_1.gif">|||
-|TT U-Net Corrected||||
+
+|Uncorrected|<img width="300" src="gif/7_92_fdk.gif">|<img width="300" src="gif/9_60_fdk.gif">|<img width="300" src="gif/10_60_fdk.gif">|
+
+|TT U-Net Corrected|<img width="300" src="gif/7_92_1.gif">|<img width="300" src="gif/9_60_1.gif">|<img width="300" src="gif/10_60_1.gif">|
 
 
 
