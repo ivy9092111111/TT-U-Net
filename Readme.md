@@ -1,5 +1,4 @@
 # [WIP] TT U-Net: Temporal Transformer U-Net for motion artifact reduction in dynamic cardiac CT
-
 Ziheng Deng, School of BME, Shanghai Jiao Tong University
 
 This repository is the official implementation of TT U-Net: Temporal Transformer U-Net for motion artifact reduction in dynamic cardiac CT. In this paper, we introduce a novel framework for motion artifact reduction in dynamic cardiac CT imaging. Two main contributions of the paper are:
@@ -75,17 +74,15 @@ We used 21 4D XCAT phantoms to train the 4D SSM. Each 4D XCAT phantom involves a
 <img width="200" src="gif/3d.gif">
 
 After that, all the shape models are spatially aligned and 4D SSM is built by performing PCA on all the point distribution models.
-$$
-S^{i}_{XCAT}(b^{i}_{anatomy},b^{i}_{motion})=BC(\overline{q}+P_{anatomy}b^{i}_{anatomy})+P_{motion}b^{i}_{motion},
-$$
+
+$$S^{i}_{XCAT}(b^{i}_{anatomy},b^{i}_{motion})=BC(\overline{q}+P_{anatomy}b^{i}_{anatomy})+P_{motion}b^{i}_{motion},$$
+
 where the left side is the 4D shape model parameterized by the anatomy weight and the motion weight, BC is the broadcast operator to obtain a 4D series. The first term on the right side describes the inter-subject variation, namely, different people have different heart shapes. The second term on the right side described the inter-phase variation, namely, the shape deformation induced by cardiac motion. The second term is what we mostly desire.
 
 #### Step 2: Predict the dynamic shape model of a single-phase clinical cardiac CT image
 
 The XCAT phantom provides both the phantom images and the segmentation labels. Thus, we can easily use the segmentation labels to determine the dynamic shape model. Fortunately, The [MMWHS dataset](http://www.sdspeople.fudan.edu.cn/zhuangxiahai/0/mmwhs/) also provides the segmentation labels for some of the single-phase clinical images. (For those that are absent of segmentation labels, we have to do it by ourselves).  We thereafter turn the segmentation map of the single-phase clinical image to a static shape model in the form of a point distribution model in the common space. The dynamic shape model can be predicted by 
-$$
-S_{clinical}=BC(S_{r})+P_{motion}\overline{b_{motion}}.
-$$
+$$S_{clinical}=BC(S_{r})+P_{motion}\overline{b_{motion}}.$$
 Intuitively, we use the motion information from 4D SSM to let the heart "beat again". The average motion is added in the common space, and then we transform the dynamic shape model to the origin space.
 
 #### Step 3: From dynamic shape model to dynamic cardiac CT images
