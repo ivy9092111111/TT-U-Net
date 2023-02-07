@@ -76,7 +76,7 @@ We follow [Perperidis's method](https://link.springer.com/chapter/10.1007/115664
 
 We used 21 4D XCAT phantoms to train the 4D SSM. Each 4D XCAT phantom involves a series of 20 frames that cover a whole cardiac cycle. The phantoms were firstly turned into surface shape models represented by surface landmarks (or say in the form of point distribution model). For example:
 
-<div align=center><img width="200" src="gif/3d.gif"></div>
+<div align=center><img width="360" src="gif/3d.gif"></div>
 
 After that, all the shape models are spatially aligned and 4D SSM is built by performing PCA on all the point distribution models.
 
