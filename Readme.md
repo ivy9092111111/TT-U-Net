@@ -11,11 +11,11 @@ This repository is the official implementation of TT U-Net: Temporal Transformer
 
 ## News
 
-__2024.2.26__: We now provide the code and trained models for building PAD. No need for XCAT and a basic version of cardiac motion model is included. Two samples from [MMWHS dataset](http://www.sdspeople.fudan.edu.cn/zhuangxiahai/0/mmwhs/) are also included, and you can generate your new 4D cardiac CT images with any 3D single-phase cardiac CT image.
+[__2024.2.26__: We now provide the code and trained models for building PAD. No need for XCAT and a basic version of cardiac motion model is included. Two samples from [MMWHS dataset](http://www.sdspeople.fudan.edu.cn/zhuangxiahai/0/mmwhs/) are also included, and you can generate your new 4D cardiac CT images with any 3D single-phase cardiac CT image.
 
 Download it: https://drive.google.com/file/d/1Ukzrmt5qS5AWhlPnkBZ706dhlfbDINzQ/view?usp=sharing
 
-Let me know if it works. We appreciate any suggestion that makes it faster and more robust.
+Let me know if it works. We appreciate any suggestion that makes it faster and more robust.]: #
 
 __2023.9.1__: Congratulations!  The TT U-Net paper has been accepted by IEEE Transaction on Medical Imaging. The latest version is now available under the "Early Access" area on IEEE Xplore. Please visit https://ieeexplore.ieee.org/document/10236564 for more information. 
 
