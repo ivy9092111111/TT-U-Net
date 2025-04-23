@@ -65,6 +65,7 @@ The main idea is to generate a dynamic deformation field and then we can warp th
 Though we have no permission to share the [XCAT phantom](https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3480985), we believe most of the readers do have the access to all the two ingredients we need. Also, if ''dynamic cardiac CT images with few motion'' are available, one may also refer our method and achieve data augmentation of your dataset. 
 
 As for the single-phase clinical cardiac images, there exist some public datasets. In clinical routine, the ECG-gated strategy is widely adopted to perform CT scan at quiescent cardiac phase. Therefore, it is possible to acquire single-phase cardiac CT images with few motion artifacts. We here recommend the [MMWHS dataset](http://www.sdspeople.fudan.edu.cn/zhuangxiahai/0/mmwhs/) proposed by Professor Zhuang at Fudan University. This dataset provides single-phase cardiac CT images with segmentation labels which are very useful for implementing our method.
+
 Updates(2025.4.23): Besides the MMWHS dataset, we now recommend the ImageCAS dataset (https://www.kaggle.com/datasets/xiaoweixumedicalai/imagecas). There are 1000 high-quality single-phase clinical cardiac CT images. Note you need to segment these images by yourself as only segmentation labels for coronary arteries are provided.
 
 Note that the scale of the simulated dataset depends on  __*the number of single-phase clinical cardiac CT images you have*__.  
